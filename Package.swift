@@ -26,6 +26,7 @@ let package = Package(
             name: "OEXFirebaseAnalytics",
             dependencies: [
                 .product(name: "OEXFoundation", package: "openedx-app-foundation-ios"),
+                .product(name: "FirebaseMessaging", package: "firebase-ios-sdk"),
                 .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk")
             ]
         ),
