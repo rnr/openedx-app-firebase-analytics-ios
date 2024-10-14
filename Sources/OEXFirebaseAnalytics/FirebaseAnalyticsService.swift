@@ -12,13 +12,13 @@ import FirebaseAnalytics
 private let MaxParameterValueCharacters = 100
 private let MaxNameValueCharacters = 40
 
-class FirebaseAnalyticsService: AnalyticsService {
+public class FirebaseAnalyticsService: AnalyticsService {
 
-    func identify(id: String, username: String?, email: String?) {
+    public func identify(id: String, username: String?, email: String?) {
         Analytics.setUserID(id)
     }
     
-    func logEvent(_ event: AnalyticsEvent, parameters: [String: Any]?) {
+    public func logEvent(_ event: AnalyticsEvent, parameters: [String: Any]?) {
         guard let name = try? formatFirebaseName(event.rawValue) else {
             debugLog("Firebase: event name is not supported: \(event.rawValue)")
             return
@@ -27,12 +27,12 @@ class FirebaseAnalyticsService: AnalyticsService {
         Analytics.logEvent(name, parameters: formatParamaters(params: parameters))
     }
     
-    func logScreenEvent(_ event: AnalyticsEvent, parameters: [String: Any]?) {
+    public func logScreenEvent(_ event: AnalyticsEvent, parameters: [String: Any]?) {
         logEvent(event, parameters: parameters)
     }
 }
 
-extension FirebaseAnalyticsService {
+public extension FirebaseAnalyticsService {
     private func formatParamaters(params: [String: Any]?) -> [String: Any] {
         // Firebase only supports String or Number as value for event parameters
         var formattedParams: [String: Any] = [:]
@@ -87,7 +87,7 @@ extension FirebaseAnalyticsService {
     }
 }
 
-extension String {
+public extension String {
     func replace(string: String, replacement: String) -> String {
         return replacingOccurrences(of: string, with: replacement, options: NSString.CompareOptions.literal, range: nil)
     }
