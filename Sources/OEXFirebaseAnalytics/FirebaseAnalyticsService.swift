@@ -13,6 +13,8 @@ private let MaxParameterValueCharacters = 100
 private let MaxNameValueCharacters = 40
 
 public class FirebaseAnalyticsService: AnalyticsService {
+    
+    public init() {}
 
     public func identify(id: String, username: String?, email: String?) {
         Analytics.setUserID(id)
