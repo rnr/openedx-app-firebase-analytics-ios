@@ -16,7 +16,7 @@ let package = Package(
             targets: ["OEXFirebaseAnalytics"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/raccoongang/openedx-app-foundation-ios.git", branch: "73836f22f165d114e07e309a01a5cbcd8103dbec"),
+        .package(url: "https://github.com/raccoongang/openedx-app-foundation-ios.git", from: "0.1.0"),
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "11.3.0")
     ],
     targets: [

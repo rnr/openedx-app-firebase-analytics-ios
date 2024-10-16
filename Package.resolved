@@ -1,5 +1,5 @@
 {
-  "originHash" : "89306a146aac0823f9fc3ef56a1457f17d6012975f599e3449334924a630b626",
+  "originHash" : "90ec71199435280f9d8d386a03d53eb33fb9f21e8c0d16cfceec6064cb667f62",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -123,7 +123,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/raccoongang/openedx-app-foundation-ios.git",
       "state" : {
-        "revision" : "73836f22f165d114e07e309a01a5cbcd8103dbec"
+        "revision" : "ab2748ed7f7977c02ec834de3bfd2630574d20e9",
+        "version" : "0.1.0"
       }
     },
     {
@@ -142,15 +143,6 @@
       "state" : {
         "revision" : "ebc7251dd5b37f627c93698e4374084d98409633",
         "version" : "1.28.2"
-      }
-    },
-    {
-      "identity" : "swiftlintplugins",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SimplyDanny/SwiftLintPlugins",
-      "state" : {
-        "revision" : "7c80ce6f142164b0201871e580b021d1b2c69804",
-        "version" : "0.57.0"
       }
     },
     {
