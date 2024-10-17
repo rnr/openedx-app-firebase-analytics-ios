@@ -20,8 +20,8 @@ public class FirebaseAnalyticsService: AnalyticsService {
         Analytics.setUserID(id)
     }
     
-    public func logEvent(_ event: AnalyticsEvent, parameters: [String: Any]?) {
-        guard let name = try? formatFirebaseName(event.rawValue) else {
+    public func logEvent(_ event: String, parameters: [String: Any]?) {
+        guard let name = try? formatFirebaseName(event) else {
             debugLog("Firebase: event name is not supported: \(event.rawValue)")
             return
         }
@@ -29,7 +29,7 @@ public class FirebaseAnalyticsService: AnalyticsService {
         Analytics.logEvent(name, parameters: formatParamaters(params: parameters))
     }
     
-    public func logScreenEvent(_ event: AnalyticsEvent, parameters: [String: Any]?) {
+    public func logScreenEvent(_ event: String, parameters: [String: Any]?) {
         logEvent(event, parameters: parameters)
     }
 }
