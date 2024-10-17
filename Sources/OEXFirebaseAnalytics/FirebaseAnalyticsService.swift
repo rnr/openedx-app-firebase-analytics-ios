@@ -22,7 +22,7 @@ public class FirebaseAnalyticsService: AnalyticsService {
     
     public func logEvent(_ event: String, parameters: [String: Any]?) {
         guard let name = try? formatFirebaseName(event) else {
-            debugLog("Firebase: event name is not supported: \(event.rawValue)")
+            debugLog("Firebase: event name is not supported: \(event)")
             return
         }
         
