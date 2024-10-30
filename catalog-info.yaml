@@ -4,7 +4,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: 'Breadcrumbsopenedx-app-firebase-analytics-ios'
+  name: 'openedx-app-firebase-analytics-ios'
   annotations:
     openedx.org/release: "main"
 spec:
