@@ -17,7 +17,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/openedx/openedx-app-foundation-ios.git", from: "1.0.0"),
-        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "11.3.0")
+        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "11.3.0"),
+        .package(url: "https://github.com/SimplyDanny/SwiftLintPlugins", from: "0.57.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -26,8 +27,10 @@ let package = Package(
             name: "OEXFirebaseAnalytics",
             dependencies: [
                 .product(name: "OEXFoundation", package: "openedx-app-foundation-ios"),
-                .product(name: "FirebaseMessaging", package: "firebase-ios-sdk"),
                 .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk")
+            ],
+            plugins: [
+                .plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLintPlugins")
             ]
         ),
         .testTarget(
