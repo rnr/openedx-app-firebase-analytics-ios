@@ -1,5 +1,5 @@
 {
-  "originHash" : "f9be8c8ed296a68d20026c7c747ee039877b4b149b9f97ff593e9c506737683a",
+  "originHash" : "20c1f114646c26588f9e1ecac6a01d3cb99c1cf12c3d71fb163de7d5cb49ef18",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Alamofire/Alamofire.git",
       "state" : {
-        "revision" : "b2fa556e4e48cbf06cf8c63def138c98f4b811fa",
-        "version" : "5.8.0"
+        "revision" : "e16d3481f5ed35f0472cb93350085853d754913f",
+        "version" : "5.10.1"
       }
     },
     {
@@ -92,12 +92,21 @@
       }
     },
     {
+      "identity" : "keychain-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/evgenyneu/keychain-swift.git",
+      "state" : {
+        "revision" : "5e1b02b6a9dac2a759a1d5dbc175c86bd192a608",
+        "version" : "24.0.0"
+      }
+    },
+    {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",
       "state" : {
-        "revision" : "b6f62758f21a8c03cd64f4009c037cfa580a256e",
-        "version" : "7.9.1"
+        "revision" : "c0940e241945e6378c01fbd45fd3815579d47ef5",
+        "version" : "8.1.0"
       }
     },
     {
@@ -123,8 +132,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/openedx/openedx-app-foundation-ios.git",
       "state" : {
-        "revision" : "90f7897455908f4e71042596a669ae9253b91441",
-        "version" : "1.0.0"
+        "revision" : "b0ce257267823d2025f1e8d7ec141558803ea8b7",
+        "version" : "1.0.1"
       }
     },
     {
