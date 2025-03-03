@@ -12,7 +12,7 @@ import FirebaseAnalytics
 private let MaxParameterValueCharacters = 100
 private let MaxNameValueCharacters = 40
 
-public class FirebaseAnalyticsService: AnalyticsService {
+final public class FirebaseAnalyticsService: AnalyticsService {
     
     public init() {}
 
